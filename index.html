@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@800&display=swap" rel="stylesheet">
+  </head>
+
+<body>
+ <div class="top-container">
+  <div class="title-p">
+   <h1 id="title"> Free Survey Form </h1>
+   <p id="description"> Thank you for taking the time to help us improve the platform </p>
+   </div>
+
+  <div class="middle-container">
+   <form id="survey-form">
+
+    <label id="name-label" for="name">Name
+    <input id="name" type="text" placeholder= "Enter Your Name" required>
+ </label>
+
+
+    <label id="email-label" for="email">Email
+    <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+ </label>
+
+    <label id="number-label" for="number">Age (optional)
+    <input id="age" type="number" min="18" max="90" placeholder="Age">
+  </label>
+
+  <div class="bottom-middle-container">
+    <label id="dropdown-label1" for="dropdown"> Which option best describes your current role?
+
+    <select id="dropdown">
+    <option value="" disabled selected hidden>Select Current Role </option>
+    <option value="Select Current Role" disabled> Select Current Role</option>
+    <option value="Student">Student</option>
+    <option value="Full Time Job">Full Time Job</option>
+    <option value="Full Time Learner">Full Time Learner</option>
+    <option value="Prefer not to say">Prefer not to say</option>
+    <option value="Other">Other</option>
+   </select>
+  </label>
+
+
+   <label for= #recommendation1 > Would you recommend my website to a friend?
+   <div class="radio-elements">
+    <label for="recommendation1">Definitely
+    <input type="radio" id="recommendation1" name="options" value="definitely" checked="checked">
+    </label>
+
+    <label for="recommendation2">Maybe
+    <input type="radio" id="recommendation2" name="options" value="maybe">
+    </label>
+
+    <label for="recommendation3">Not sure
+    <input type="radio" id="recommendation3" name="options" value="other">
+    </label>
+   </div>
+
+    <label id="dropdown-label2" for="dropdown">What is your favorite feature in Front-End?</label>
+  <select id="dropdown2">
+    <option value="" disabled selected hidden>Select an option</option>
+    <option value="Select Current Role" disabled> Select an option</option>
+    <option value="Full Time Job">Flex-box</option>
+    <option value="Full Time Learner">Grid Layout</option>
+    <option value="Prefer not to say">Linear-Gradient</option>
+    <option value="Other">Keyframes</option>
+   </select>
+
+ </div>
+
+
+  <div class="improvement">
+    <label for="#front-end-projects" class="checkbox-p"> What would you like to see improved? (Check all that apply) </label>
+
+    <label for="front-end-projects">Front End Projects
+     <input type="checkbox" id="front-end-projects" value="front-end-projects">
+    </label>
+
+    <label for="back-end-projects">Back End Projects
+      <input type="checkbox" id="back-end-projects" value="front-end-projects">
+    </label>
+
+    <label for="data-visualization">Data Visualization
+     <input type="checkbox" id="data-visualization" value="data-visualization">
+    </label>
+
+    <label for="challenges">Challenges
+      <input type="checkbox" id="challenges" value="challenges">
+    </label>
+
+    <label for="open-source-community">Open Source Community
+      <input type="checkbox" id="open-source-community" value="open-source-community">
+    </label>
+
+    <label for="gitter-help-rooms">Gitter help rooms
+      <input type="checkbox" id="gitter-help-rooms" value="gitter-help-rooms">
+    </label>
+
+    <label for="videos">Videos
+      <input type="checkbox" id="videos" value="videos">
+    </label>
+
+    <label for="city-meetups">City Meetups
+      <input type="checkbox" id="city-meetups" value="city-meetups">
+    </label>
+
+    <label for="wiki">Wiki
+     <input type="checkbox" id="wiki" value="wiki">
+    </label>
+
+    <label for="forum">Forum
+      <input type="checkbox" id="forum" value="forum">
+    </label>
+
+    <label for="additional-courses">Additional Courses
+     <input type="checkbox" id="additional-courses" value="additional-courses">
+    </label>
+  </div>
+
+    <label for="comments">Review of W3Schools:
+  <textarea id="comments" rows="4" cols="50" placeholder="Enter your comments here"></textarea>
+ </label>
+</form>
+
+ <button id="submit" type="submit" form="survey-form" value="Submit">Submit</button>
+ </div>
+</div>
+
+</body>
+
+</html>
